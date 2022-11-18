@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Other - RynoGG</title>
+	<link href="../assets/img/icon.png" rel="shortcut icon" >
+	<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
+	<script src="https://embed.twitch.tv/embed/v1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	
+	<img draggable="false" src="../assets/img/bg-yellow.jpg" id="bg">
+	<img draggable="false" src="../assets/img/home/edge.png" class="homeEdge">
+	<img draggable="false" src="../assets/img/home/edge.png" class="homeEdge edge-right">
+	
+	<header>
+		<div class="wrapper">
+			<a href=".."><img src="../assets/img/logo-header.png" class="center-fit-head" galleryimg="no"></a>
+			<ul id="nav" class="nav">
+				<li class="nav"><a href="../videos" class="menu-item-head video">Videos</a></li>
+	  			<li class="nav"><a href="../games" class="menu-item-head games">Games</a></li>
+				<li class="nav"><a href="../other" class="menu-item-head other">Other</a></li>
+	  			<li class="nav"><a href="../about" class="menu-item-head about">About</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<script>
+		$("#nav").addClass("js");
+		$("#nav").addClass("js").before('<div id="menu"><a href="#"><img src="../assets/img/navicon.png" style="width:45px; max-width:8vw;" onContextMenu="return false" onDragStart="return false" galleryimg="no"></a></div>');
+		$("#menu").click(function(){
+			if($("#nav").attr("style") != "display:inline;")
+			{
+				$("#nav").attr("style", "display:inline;");
+			}
+			else
+			{
+				$("#nav").attr("style", "display:none;");
+			}
+		});
+		$(window).resize(function(){
+			if(window.innerWidth > 800) {
+				$("#nav").removeAttr("style");
+			}
+		});
+		$(window).onclick(function(){
+			if(window.innerWidth <= 800) {
+				$("#nav").attr("style", "display:none;");
+			}
+		})
+	</script>
+	
+	<content>
+		<center><img src="../assets/img/other.png"></center>
+		<p>I've also done a variety of other things, including streaming and art!</p>
+		
+		<h2>Twitch</h2>
+		<p>Sarah sometimes streams on Twitch.  She usually plays video games on it.</p>
+		<div id="twitch-embed"></div>
+		
+		<h2>Discord</h2>
+		<p>RynoGG has a Discord server, and is currently the best way to get updates on most things RynoGG!!!!</p>
+		<iframe src="https://discordapp.com/widget?id=238847154548899850&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+		
+	</content>
+	
+	<script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 640,
+        height: 360,
+		layout: "video",
+        channel: "rynogg",
+		autoplay: false
+      });
+    </script>
+	
+	<footer>
+		©2014-<script>document.write(new Date().getFullYear())</script> RynoGG<br>
+		Made with ❤️<br>
+		Page last updated June 1st, 2021
+	</footer>
+	
+</body>
+	<script>twemoji.parse(document.body)</script>
+</html>

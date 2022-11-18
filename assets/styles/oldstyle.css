@@ -1,0 +1,63 @@
+body {
+  background: #000000;
+  color: white;
+  font-family: "Segoe UI", Segoe, sans-serif;
+}
+
+a:link {
+    color: #6D83F7;
+}
+
+a:visited {
+    color: #9A69EF;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+table {
+    border: 3px solid white;
+    border-collapse: separate;
+    border-spacing: 15px 20px;
+    width: 720px;
+    background-color: #282828;
+}
+
+table.rtgg {
+    background-color: #2A2D56;
+}
+
+table.rainbow {
+    background:url(101gradient.png);
+    background-size: 100% 100%;
+}
+
+table.more {
+    background-color: #512804;
+}
+
+table.f {
+    background-color: #244924;
+}
+
+#nav {
+    font-size: 12px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 40px;
+}
+
+footer {
+    padding-top: 20px;
+    color: gray;
+    text-align: center;
+  
+}

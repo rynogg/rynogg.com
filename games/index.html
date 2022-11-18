@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Games - RynoGG</title>
+	<link href="../assets/img/icon.png" rel="shortcut icon" >
+	<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	
+	<img draggable="false" src="../assets/img/bg-green.jpg" id="bg">
+	<img draggable="false" src="../assets/img/home/edge.png" class="homeEdge">
+	<img draggable="false" src="../assets/img/home/edge.png" class="homeEdge edge-right">
+	
+	<header>
+		<div class="wrapper">
+			<a href=".."><img src="../assets/img/logo-header.png" class="center-fit-head" galleryimg="no"></a>
+			<ul id="nav" class="nav">
+				<li class="nav"><a href="../videos" class="menu-item-head video">Videos</a></li>
+	  			<li class="nav"><a href="../games" class="menu-item-head games">Games</a></li>
+				<li class="nav"><a href="../other" class="menu-item-head other">Other</a></li>
+	  			<li class="nav"><a href="../about" class="menu-item-head about">About</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<script>
+		$("#nav").addClass("js");
+		$("#nav").addClass("js").before('<div id="menu"><a href="#"><img src="../assets/img/navicon.png" style="width:45px; max-width:8vw;" onContextMenu="return false" onDragStart="return false" galleryimg="no"></a></div>');
+		$("#menu").click(function(){
+			if($("#nav").attr("style") != "display:inline;")
+			{
+				$("#nav").attr("style", "display:inline;");
+			}
+			else
+			{
+				$("#nav").attr("style", "display:none;");
+			}
+		});
+		$(window).resize(function(){
+			if(window.innerWidth > 800) {
+				$("#nav").removeAttr("style");
+			}
+		});
+		$(window).onclick(function(){
+			if(window.innerWidth <= 800) {
+				$("#nav").attr("style", "display:none;");
+			}
+		})
+	</script>
+	
+	<content>
+		<center><img src="../assets/img/games.png"></center>
+		<p>When I was a young bab, I wanted to make video games.  I'm doing that now!!!  This is a list of games that are developed/published under the Ryno name.</p>
+        
+        <center><img src="../assets/img/games/deltatraveler.png" style="padding: 15px;"></center>
+        <p>Deltatraveler is a Deltarune fangame that has been in development since September 2021.  In Deltatraveler, Kris and Susie, after their adventures in Cyberworld and subsequent sleepover, wake up in a strange underground world...  Unbeknownst to them, they've landed in a world parallel to their own: The world of Undertale!  They, along with Noelle, travel through different worlds and timelines in order to seek out answers and make their way home.</p>
+        <iframe src="https://widgets.gamejolt.com/package/v1?key=4ZT5taK8" frameborder="0" width="500" height="245"></iframe>
+        
+        <center><img src="../assets/img/games/unotale.png" style="padding: 15px;"></center>
+		<p>UNOTALE: Card Game is an implementation of the UNO card game into the UNDERTALE battle system.  You and up to 7 of your friends can play together online with customizable rules and unique features, such as DARE! Cards.</p>
+        <iframe src="https://widgets.gamejolt.com/package/v1?key=2PLC8uq8" frameborder="0" width="500" height="245"></iframe>
+		
+		<center><img src="../assets/img/games/atonement.png" style="padding-top: 15px;"></center>
+		<p>ATONEMENT is an UNDERTALE fangame that follows Frisk, whose involuntary actions as Chara have led them to HELL.  Your decisions will determine the fate of you and your SOUL.</p>
+		<iframe frameborder="0" src="https://itch.io/embed/435262?bg_color=222222&amp;fg_color=ffffff&amp;border_color=363636" width="552" height="167"></iframe>
+
+		<center><img src="../assets/img/games/tcbrpg.png" style="padding-top: 15px;"></center>
+		<p>The Completely Broken RPG is an RPG Maker game from 2015.  The game stars Joseph and a whole cast of stolen characters who are on a quest to find a cure to an incurable disease that alters people's behaviors.  It's uhh... a trip.</p>
+		<iframe src="https://widgets.gamejolt.com/package/v1?key=qyi4nNhq" frameborder="0" width="500" height="245"></iframe>
+		
+		
+	</content>
+	
+	<footer>
+		©2014-<script>document.write(new Date().getFullYear())</script> RynoGG<br>
+		Made with ❤️<br>
+		Page last updated November 18, 2022
+	</footer>
+	
+</body>
+	<script>twemoji.parse(document.body)</script>
+</html>

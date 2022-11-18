@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Videos - RynoGG</title>
+	<link href="../assets/img/icon.png" rel="shortcut icon" >
+	<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	
+	<img draggable="false" src="../assets/img/bg-red.jpg" id="bg">
+	<img draggable="false" src="../assets/img/home/edge.png" class="homeEdge">
+	<img draggable="false" src="../assets/img/home/edge.png" class="homeEdge edge-right">
+	
+	<header>
+		<div class="wrapper">
+			<a href=".."><img src="../assets/img/logo-header.png" class="center-fit-head" galleryimg="no"></a>
+			<ul id="nav" class="nav">
+				<li class="nav"><a href="../videos" class="menu-item-head video">Videos</a></li>
+	  			<li class="nav"><a href="../games" class="menu-item-head games">Games</a></li>
+				<li class="nav"><a href="../other" class="menu-item-head other">Other</a></li>
+	  			<li class="nav"><a href="../about" class="menu-item-head about">About</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<script>
+		$("#nav").addClass("js");
+		$("#nav").addClass("js").before('<div id="menu"><a href="#"><img src="../assets/img/navicon.png" style="width:45px; max-width:8vw;" onContextMenu="return false" onDragStart="return false" galleryimg="no"></a></div>');
+		$("#menu").click(function(){
+			if($("#nav").attr("style") != "display:inline;")
+			{
+				$("#nav").attr("style", "display:inline;");
+			}
+			else
+			{
+				$("#nav").attr("style", "display:none;");
+			}
+		});
+		$(window).resize(function(){
+			if(window.innerWidth > 800) {
+				$("#nav").removeAttr("style");
+			}
+		});
+		$(window).onclick(function(){
+			if(window.innerWidth <= 800) {
+				$("#nav").attr("style", "display:none;");
+			}
+		})
+	</script>
+	
+	<content>
+		<center><img src="../assets/img/videos.png"></center>
+		<p>You're probably here for this.  Yes, I make videos, though I haven't really been that engaged with them for a while.  Need to really fix that...</p>
+		<h2>Video Series</h2>
+		
+		<center><img src="../assets/img/videos/underfell.png" style="padding-bottom: 15px;"></center>
+		<p>UNDERFELL (aka GG!UNDERFELL) is an animated series interpretation of the UNDERTALE Alternate Universe of the same name.  The story follows Frisk on their quest to escape the Underground.  However, most monsters encountered are out for blood.  Frisk is not alone.  They're joined by Flowey the Flower, a talking flower whose experience in the Underground has left them paranoid of everything.  Frisk sets out on their quest, determined to pacify the monsters of the Underground and escape to the surface.</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj4x2IudJZ0Tg5ah_pHZCKx_KYBPKUQ3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<center><img src="../assets/img/videos/rr2tt.png" style="width:350px; float:left;"></center>
+		<p>Starting as a huge gameplay video to signify her ability to make Toontown videos again, Ryno's Return to Toontown is a gameplay compilation series that follows Ryno and her group of misfit friends.  They tackle the games they play head-on, which consists of heavy dosages of Toontown and Team Fortress 2.</p>
+        <p>Admittedly, many of the older videos in this series has been rather explicit, so most of the videos have either been unlisted or privated.  Viewer discresion is advised.</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLj4x2IudJZ0SuARNWGGyvviLG0JHn4zYf" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<h2>Channel History</h2>
+		<p>I created the RynoTheGameGal channel back in September - 2014 and made the first video in November of that same year.  Around the start of 2015, I would make a bunch of Toontown machinima videos under the title "The Rewritten Story," though would ultimately stop making Toontown content under the scrutiny of my parents.  I would go on to make miscellaneous videos from here on.</p>
+        
+        <p>At some point, I wanted to start making more serious content, but I felt using RynoTheGameGal to post it would be inappropriate, so I created the Ryno Productions channel to upload The Otherworlder and GG!UNDERFELL.  They skyrocketed in popularity, kinda leaving the original channel to sit in neglect.  Because of this, I decided to merge RynoTheGameGal into Ryno Productions and rebrand as RynoGG.</p>
+        
+        <p>From then on, I would go on to: make more gameplay videos, cancel the Underfell series then bring it back a year later, revive The Rewritten Story (unsuccessfully), and eventually delve into proper game development with ATONEMENT.</p>
+	</content>
+	
+	<footer>
+		©2014-<script>document.write(new Date().getFullYear())</script> RynoGG<br>
+		Made with ❤️<br>
+		Page last updated June 1st, 2021
+	</footer>
+	
+</body>
+	<script>twemoji.parse(document.body)</script>
+</html>

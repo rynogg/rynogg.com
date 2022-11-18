@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>About - RynoGG</title>
+	<link href="../assets/img/icon.png" rel="shortcut icon" >
+	<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	
+	<img draggable="false" src="../assets/img/bg-blue.jpg" id="bg">
+	<img draggable="false" src="../assets/img/home/edge.png" class="homeEdge">
+	<img draggable="false" src="../assets/img/home/edge.png" class="homeEdge edge-right">
+	
+	<header>
+		<div class="wrapper">
+			<a href=".."><img src="../assets/img/logo-header.png" class="center-fit-head" galleryimg="no"></a>
+			<ul id="nav" class="nav">
+				<li class="nav"><a href="../videos" class="menu-item-head video">Videos</a></li>
+	  			<li class="nav"><a href="../games" class="menu-item-head games">Games</a></li>
+				<li class="nav"><a href="../other" class="menu-item-head other">Other</a></li>
+	  			<li class="nav"><a href="../about" class="menu-item-head about">About</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<script>
+		$("#nav").addClass("js");
+		$("#nav").addClass("js").before('<div id="menu"><a href="#"><img src="../assets/img/navicon.png" style="width:45px; max-width:8vw;" onContextMenu="return false" onDragStart="return false" galleryimg="no"></a></div>');
+		$("#menu").click(function(){
+			if($("#nav").attr("style") != "display:inline;")
+			{
+				$("#nav").attr("style", "display:inline;");
+			}
+			else
+			{
+				$("#nav").attr("style", "display:none;");
+			}
+		});
+		$(window).resize(function(){
+			if(window.innerWidth > 800) {
+				$("#nav").removeAttr("style");
+			}
+		});
+		$(window).onclick(function(){
+			if(window.innerWidth <= 800) {
+				$("#nav").attr("style", "display:none;");
+			}
+		})
+	</script>
+	
+	<content>
+		<center><img src="../assets/img/about.png"></center>
+		<h1>About Ryno</h1>
+		
+		<p>Sarah (Ryno) is a 22 y/o college student who's studying Computer Science.  She fancies herself a video creator, animator, artist, voice actress, programmer, and game developer.</p>
+		
+		<h2>Experience</h2>
+		<ul style="list-style-type: disc">
+			<li><b>RynoGG</b> : Sept 2014 - Present</li>
+			<ul style="list-style-type: none">Host, Video Creator, Animator, Voice Actress, Community Manager</ul>
+			
+			<li><b>UNDERFELL (Primus / Team Spritedgy)</b> : Mid 2016 - Apr 2017</li>
+			<ul style="list-style-type: none">Writer, Concept Artist</ul>
+			
+			<li><b>Toontown Offline</b> : Sept 2017 - Apr 2019 ; Sept 2020 - May 2021</li>
+			<ul style="list-style-type: none">3D Animator, Video Editor, Game Developer, Texture Artist</ul>
+		</ul>
+		
+		<h2>Contact</h2>
+		<ul style="list-style-type: disc">
+			<li><b>General Email</b> : <a href="mailto:ryno@rynogg.com">ryno@rynogg.com</a></li>
+			<li><b>Business Email</b> : <a href="mailto:business@rynogg.com">business@rynogg.com</a></li>
+            <li><b>Tumblr</b> : <a href="https://rynogg.tumblr.com/">@rynogg</a></li>
+			<li><b>Twitter</b> : <a href="https://www.twitter.com/_rynogg" target="_blank">@_rynogg</a></li>
+			<li><b>Instagram</b> : <a href="https://www.instagram.com/_rynogg/" target="_blank">@_rynogg</a></li>
+			<li><b>Discord Server</b> : <a href="https://discord.gg/tGGVJ3A" target="_blank">tGGVJ3A</a></li>
+		</ul>
+		
+		<h1>About Website (v2.1)</h1>
+		<p>The website was created by Sarah and is hosted via GitHub.  Website v2 was developed in November 2019 through a process known as pain and suffering, and the modern repaint (v2.1) was developed mostly during February 2021 and finished in June.</p>
+		
+		
+	</content>
+	
+	<footer>
+		©2014-<script>document.write(new Date().getFullYear())</script> RynoGG<br>
+		Made with ❤️<br>
+		Page last updated November 18th, 2022
+	</footer>
+	
+</body>
+	<script>twemoji.parse(document.body)</script>
+</html>

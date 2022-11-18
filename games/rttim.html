@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>RTTIM - RynoGG</title>
+	<link href="../assets/img/icon.png" rel="shortcut icon" >
+	<link href="../assets/styles/style.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	
+	<img draggable="false" src="../assets/img/bg-green.jpg" id="bg">
+	<img draggable="false" src="../assets/img/home/edge.png" class="homeEdge">
+	<img draggable="false" src="../assets/img/home/edge.png" class="homeEdge edge-right">
+	
+	<header>
+		<div class="wrapper">
+			<a href=".."><img src="../assets/img/logo-header.png" class="center-fit-head" galleryimg="no"></a>
+			<ul id="nav" class="nav">
+				<li class="nav"><a href="../videos" class="menu-item-head video">Videos</a></li>
+	  			<li class="nav"><a href="../games" class="menu-item-head games">Games</a></li>
+				<li class="nav"><a href="../other" class="menu-item-head other">Other</a></li>
+	  			<li class="nav"><a href="../about" class="menu-item-head about">About</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<script>
+		$("#nav").addClass("js");
+		$("#nav").addClass("js").before('<div id="menu"><a href="#"><img src="../assets/img/navicon.png" style="width:45px; max-width:8vw;" onContextMenu="return false" onDragStart="return false" galleryimg="no"></a></div>');
+		$("#menu").click(function(){
+			if($("#nav").attr("style") != "display:inline;")
+			{
+				$("#nav").attr("style", "display:inline;");
+			}
+			else
+			{
+				$("#nav").attr("style", "display:none;");
+			}
+		});
+		$(window).resize(function(){
+			if(window.innerWidth > 800) {
+				$("#nav").removeAttr("style");
+			}
+		});
+		$(window).onclick(function(){
+			if(window.innerWidth <= 800) {
+				$("#nav").attr("style", "display:none;");
+			}
+		})
+	</script>
+	
+	<content>
+		<center><img src="../assets/img/games/rttim.png"></center>
+		
+		<p>Welcome to the RTTIM Webpage!  RTTIM is a bunch of edits of the Toontown Infinite source from 2015.  Here you'll find everything about my project that you might want, like downloads.</p>
+		
+		<h1><a href="https://drive.google.com/open?id=0ByhEdrimrfA-Q216NUpuNlNlZlk" target="_blank">Panda3D-1.9.0</a></h1>
+		<h1><a href="https://github.com/rynogg/rttim" target="_blank">GitHub Repository</a></h1>
+		<h1><a href="https://drive.google.com/open?id=0ByhEdrimrfA-Z2Y5cmlmNmJWSW8" target="_blank">Latest Release (v69.5)</a></h1>
+		
+		<h2>Release Notes (pre-GitHub)</h2>
+		
+		<h3>v69.5 - The Glossy Paint Update</h3>
+		<ul style="list-style-type:disc">
+			<li>Most of the current Toontown: Movie Maker Edition branding (title, icon, etc) has been replaced with RTTIM branding!</li>
+			<li>Added the TTR Loading Screen. (actually its TTOff but whatever)</li>
+			<li>New Pick-A-Toon screen!  Now it looks cool.</li>
+			<li>New commands:</li>
+			<li>~merits [cogindex] [merits]</li>
+			<li>~summon [shorthand (like tbc)]</li>
+			<li>~leech [hp]</li>
+			<li>~sleep</li>
+			<li>Readded some old relics from the original Toontorial.</li>
+			<li>Muscular Resources has taken a darker form: Shadow Justice.</li>
+			<li>All Tier 9 Cogs can now be fought and have their own special abilities. ~cog spawn [shorthand (like pb)]</li>
+			<li>New attacks:</li>
+			<ul style="list-style-type: circle;">
+				<li>Flex (Buff Shark)</li>
+				<li>Pierce (Pencil Breaker)</li>
+				<li>Cigar Smoke (Swag Foreman, The Big Cheese)</li>
+				<li>Song and Dance (Pencil Breaker, The Big Cheese, Mr. Hollywood)</li>
+			</ul>
+			<li>Rental Suits now show up on the Cog when defeated.</li>
+			<li>SuitA Cogs now have colored hands!</li>
+			<li>The Cog Gallery has been removed because I'm lazy.  If you want to use Cog Summons, do the ~summon command.</li>
+			<li>Removed the "Promote" button that TTI added to the Disguise Page to prevent Toon issues.</li>
+			<li>New SOS Toons:</li>
+			<ul style="list-style-type: circle;">
+				<li>Magic Ryno</li>
+				<li>Touch Yourself, Terry</li>
+				<li>Mr. Cheeze</li>
+				<li>Dogemon</li>
+				<li>Sir Furball</li>
+				<li>Bill</li>
+			</ul>
+			<li>You can no longer turn into a Cog when you are a Classic Character and vice versa.</li>
+			<li>Crocodiles and Riggy can now wear hats (but only in one location).</li>
+			<li>You can now customize your game resolution.</li>
+			<li>All the music has been changed to TTR's music.  Even the D.A's Office.</li>
+			<li>The Flower District Reset has been fixed, and the overall event has been visually upgraded.</li>
+		</ul>
+		
+		<h3>v69.4</h3>
+		<ul style="list-style-type:disc">
+			<li>Added the new TTR colors.</li>
+			<li>You can now become Skelecogs and Waiter Cogs. (2-4)</li>
+			<li>New Cogs have been added!  ~setcogsuit tier [cogindex] 8</li>
+			<li>You can now turn into Classic Characters! ~charTrans #</li>
+			<li>Added the new TTR Species'.  Their current models will change in the future.</li>
+			<li>Classic Characters NPCs now exist.</li>
+			<li>Flipped the Bossbot suit sleeve and leg textures so it is correct.</li>
+			<li>Getting enough people into the flower area will cause the flower to fall down.</li>
+		</ul>
+		
+		<h3>v64.3</h3>
+		<ul style="list-style-type:disc">
+			<li>Fixed a typo for a SpeedChat phrase and changed another SpeedChat phrase.</li>
+			<li>Changed some Make-A-Toon specific text into the 2003 text.</li>
+			<li>Removed some more TTMME branding.</li>
+			<li>Added Grey and Black Speedchat colors.</li>
+			<li>Added an unused Virtual Toon CE from TTI code (16) and a Rayman-inspired CE (17).</li>
+			<li>Fixed the invisible CE (11) so naked torsos now go invisible.  The original has been moved to 18.</li>
+			<li>Added Riggy as a new species.</li>
+			<li>Fixed a crash relating to the Tug-O-War Trolley Game.</li>
+			<li>OOBE now triggers when pushing F4.</li>
+			<li>~cogIndex was changed to ~setCogIndex.</li>
+			<li>You can now become the Cog that you disguise as! ~setCogIndex # 1</li>
+			<li>~loop, ~pingpong, and ~pose are all now server sided!  They also work on any Cog suits that you wear!</li>
+			<li>untitled's sequence is now shorter.</li>
+		</ul>
+		
+		<h3>v64.2</h3>
+		<ul style="list-style-type:disc">
+			<li>Smooth Animations work better on Toons.</li>
+			<li>2003 Make A Toon beat the shit out of TTI's Make A Toon and became the only one for RTTIM.  The best part is that it works.</li>
+			<li>~setAnimState (animState) (speed #)</li>
+			<li>Toons now have to be much further away for lower LOD models to take affect.</li>
+			<li>Cogs now use Smooth Animations. (until they die)</li>
+			<li>Classic Characters now use Smooth Animations.</li>
+			<li>NPC Toons now use Smooth Animations.</li>
+			<li>New Colors: ToonFest Blue and Hot Lime.</li>
+			<li>Restored original Nude Toon values. (originally ln, mn, sn... restored to l, m, s)</li>
+		</ul>
+		
+		<h3>v64.1</h3>
+		<ul style="list-style-type:disc">
+			<li>All torsos are now unisex.  ~dna torso now utilizes ids 0-8 for all genders.</li>
+			<li>Nude Toons are now part of ToonDNA.  Do ~dna torso 6-8.</li>
+			<li>Because of the above, doing ~setCE 16 will now do nothing.</li>
+			<li>All DNA color command restrictions have been removed.</li>
+			<li>Some Magic Words like ~name and ~hat have now been changed to their Toontown Offline counterparts. (~setName, ~setHat)</li>
+			<li>~emotes</li>
+			<li>Player Toons now use Smooth Animations.</li>
+			<li>A strange Toon is now located in Toontown Central.  As a consequence, Fisherman Freddy is now stuck in the ground.</li>
+			<li>The Title Screen now uses RynoGG branding rather than Ryno Productions.</li>
+		</ul>
+		
+		<h3>v1.0.0 - Initial Version</h3>
+		<ul style="list-style-type:circle">
+			<li>All features from Toontown: Movie Maker Edition.</li>
+			<li>~cheesyEffect has been changed to ~setCE.</li>
+			<li>Nude Toons.  Accessed with ~setCE 16.</li>
+		</ul>
+		
+	</content>
+	
+	<footer>
+		©2014-<script>document.write(new Date().getFullYear())</script> RynoGG<br>
+		Made with ❤️<br>
+		Page last updated November 7th, 2019
+	</footer>
+	
+</body>
+	<script>twemoji.parse(document.body)</script>
+</html>
